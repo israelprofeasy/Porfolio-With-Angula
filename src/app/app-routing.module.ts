@@ -6,7 +6,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { QualityComponent } from './components/quality/quality.component';
-import { ReviewComponent } from './components/review/review.component';
+
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [

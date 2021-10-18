@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { faPlus} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -11,5 +11,5 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+faPlus = faPlus;
 }

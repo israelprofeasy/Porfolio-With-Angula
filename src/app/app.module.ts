@@ -12,7 +12,6 @@ import { QualityComponent } from './components/quality/quality.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ReviewComponent } from './components/review/review.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -26,8 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SkillsComponent,
     FeaturesComponent,
     PortfolioComponent,
-    ReviewComponent,
-    ContactComponent,
+       ContactComponent,
     FooterComponent,
     
   ],

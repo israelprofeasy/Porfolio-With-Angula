@@ -14,6 +14,8 @@ import { FeaturesComponent } from './components/features/features.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -34,9 +36,10 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
+    HttpClientModule,
     
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 

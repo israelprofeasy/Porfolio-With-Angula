@@ -12,12 +12,12 @@
                 <h3 class="mb-4">Product Engineer & Web Developer</h3>
                 <p>I am your favorite Product Engineer with two plus years of expereince able to build web applications from the ground up-gathering information, planning, designing, developing, testing and delivery and maintenance. I'm extremely passionate towards software architectures and design combined with sensitivity to serve the needs of an organisation balanced with the delivery of high solutions.</p>
                 <div class="row mb-3">
-                    <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Israel Akintola Oluwafemi</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">{{fullDetails.firstname}} Akintola {{fullDetails.lastname}}</span></h6></div>
    
                     <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">2 Years</span></h6></div>
-                    <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+234 07031389506</span></h6></div>
-                    <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">israeloluwafemi44@gmail.com</span></h6></div>
-                    <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">7 Asajon Way, Eti-Osa, Sangotedo, Lagos, Nigeria</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+234 {{fullDetails.phonenumber}}</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">{{fullDetails.email}}</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">{{fullDetails.address.street}}, Eti-Osa, {{fullDetails.address.city}}, {{fullDetails.address.state}}, {{fullDetails.address.country}}</span></h6></div>
                     <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
                 </div>
                 <a href="" class="btn blue btn-outline-primary mr-4">Hire Me</a>

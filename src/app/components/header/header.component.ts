@@ -3,18 +3,7 @@ import { computeDecimalDigest } from '@angular/compiler/src/i18n/digest';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 
-export class FullDetails {
-  constructor( 
-    public firstname: string,
-    public lastname: string,
-    public email: string,
-    public phone: number,
-    public address: object,
-    public skills: object,
-    public socialhandles: object,
-    
-  ){}
-}
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -22,15 +11,22 @@ export class FullDetails {
 })
 export class HeaderComponent implements OnInit {
 
-  myinfo: any = {};
-
+  myinfo: any;
+  fullDetails ={
+    firstname:"",
+    lastname:"",
+  };
+  
+      
   constructor(private http:UserService) { }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
    this.http.getData().subscribe(
       res=>{
         this.myinfo = res;
-            console.log(res)
+        this.fullDetails.firstname = this.myinfo.firstname;
+        this.fullDetails.lastname = this.myinfo.lastname;
+        // console.log(this.fullDetails)
       },
       err => {
         console.log(err)
